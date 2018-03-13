@@ -20,12 +20,22 @@
   "scripts": {
     "start": "node-dev .",
     "daemon": "mkdir -p /tmp/wxio-bot/ && pm2 start ecosystem.json",
-    "stop": "pm2 stop ecosystem.json"
+    "stop": "pm2 stop ecosystem.json",
+    "clean": "rimraf ./.data ./.snapshots ./.logs"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.1",
+    "cheerio": "^1.0.0-rc.2",
     "config": "^1.30.0",
+    "discord.js": "^11.3.2",
     "fs-extra": "^5.0.0",
+    "lodash": "^4.17.5",
+    "lowdb": "^1.0.0",
+    "p-queue": "^2.3.1",
     "pino": "^4.13.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "rimraf": "^2.6.2"
+  }
 }
