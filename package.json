@@ -1,0 +1,31 @@
+{
+  "name": "wxio-bot",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "author": "yelo <zhihuzeye@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imyelo/wxio-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imyelo/wxio-bot/issues"
+  },
+  "homepage": "https://github.com/imyelo/wxio-bot#readme",
+  "main": "app",
+  "engines": {
+    "node": ">=7.6"
+  },
+  "scripts": {
+    "start": "node-dev .",
+    "daemon": "mkdir -p /tmp/wxio-bot/ && pm2 start ecosystem.json",
+    "stop": "pm2 stop ecosystem.json"
+  },
+  "dependencies": {
+    "config": "^1.30.0",
+    "fs-extra": "^5.0.0",
+    "pino": "^4.13.0"
+  },
+  "devDependencies": {}
+}

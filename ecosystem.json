@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "wxio-bot",
+      "cwd": process.env.PWD,
+      "out_file": "/tmp/wxio-bot/log.log",
+      "error_file": "/tmp/wxio-bot/err.log",
+      "script": ".",
+      "instances": 1,
+      "exec_mode": "fork"
+    }
+  ]
+}
